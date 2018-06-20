@@ -35,12 +35,12 @@ $ helm delete oke-efk-release
 
 | Parameter                  | Description                         | Default                                                 |
 |----------------------------|-------------------------------------|---------------------------------------------------------|
-| `rbac.enabled` | Enables RBAC | `false` |
+| `rbac.enabled` | Enables RBAC | `true` |
 | `kibana.replicaCount`                 | Number of Kibana nodes | `1` |
 | `kibana.image.repository`         | Image repository | `docker.elastic.co/kibana/kibana` |
 | `kibana.image.tag`                | Image tag. | `6.2.4`|
 | `kibana.image.pullPolicy`         | Image pull policy | `IfNotPresent` |
-| `kibana.service.type`             | Kubernetes service type | `ClusterIP` |
+| `kibana.service.type`             | Kubernetes service type | `LoadBalancer` |
 | `kibana.service.port`             | Kubernetes port where service is exposed| `5601` |
 | `kibana.ingress.enabled`          | Enables Ingress | `false` |
 | `kibana.ingress.annotations`      | Ingress annotations | `{}` |
@@ -80,6 +80,5 @@ $ helm delete oke-efk-release
 # TODO
 
 * [ ] - Add persistence to elasticsearch (possibly Kibana as well)
-* [ ] - Make sure all [technical requirements](https://github.com/kubernetes/charts/blob/master/CONTRIBUTING.md#technical-requirements) for a PR to kubernetes/charts are met
-* [ ] - Submit as a PR to kubernetes/charts
+
 
