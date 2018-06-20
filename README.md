@@ -3,10 +3,12 @@ This repo is to store the HELM Chart for deploying EFK on OKE
 
 * This will help you to install a complete logging solution for Kubernetes nodes. This is specifically written for Oracle Kubernetes Engine aka OKE. Elasticsearch in this case is not Persistent, that persistence will be delivered later on.
 
-## TL;DR;
+# Now Clone the Github and do the Helm Install.
 
 $ git clone https://github.com/stretchcloud/OKE-EFK-Metricbeat
+
 $ cd OKE-EFK-Metricbeat
+
 $ helm install .
 
 
