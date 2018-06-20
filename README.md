@@ -79,6 +79,6 @@ $ helm delete oke-efk-release
 
 # TODO
 
-* [ ] - Add persistence to elasticsearch (possibly Kibana as well)
+* [ ] - Add persistence to elasticsearch using storage class "oci"
 
 
